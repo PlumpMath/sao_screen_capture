@@ -15,7 +15,7 @@ You have to link in the osx/cocoa frameworks that are necessesary for this to wo
 
 See test_screen_capture.c for an example use. Works like this.
 
-* Set up a capture queue by calling sc_allocate. You can then read info about the screen and capture from the struct.
-* Call sc_startCapture(cq) to start capturing.
-* Poll for new screen images by calling sc_aquireNextFrame(cq);
-* If you get a new frame you can copy view the screen data, once you are done with the frame call sc_releaseFrame(cq, frame) to release the memory back to the capture_queue.
+* Set up a capture queue by calling `sc_allocate`. You can then read info about the screen and capture from the struct.
+* Call `sc_startCapture(cq)` to start capturing.
+* Poll for new screen images by calling `sc_aquireNextFrame(cq)`.
+* If you get a new frame you can copy view the screen data, once you are done with the frame call `sc_releaseFrame(cq, frame)` to release the memory back to the capture_queue.
